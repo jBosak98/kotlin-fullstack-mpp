@@ -20,8 +20,8 @@ config.devServer.watchOptions = {
     "poll": 1000
 };
 
-/*module.exports = {
+module.exports = {
     entry: {
         main: path.resolve(__dirname, "kotlin\\kotlin-fullstack-mpp-frontend.js")
     }
-}*/
+}

@@ -56,10 +56,8 @@ kotlin {
             }
         }
     }
+
     jvm("backend")
-    /* Targets configuration omitted. 
-    *  To find out how to configure the targets, please follow the link:
-    *  https://kotlinlang.org/docs/reference/building-mpp-with-gradle.html#setting-up-targets */
 
     sourceSets {
         val commonMain by getting {
@@ -100,7 +98,6 @@ kotlin {
                 implementation(npm("styled-components"))
                 implementation(npm("jquery"))
             }
-
         }
 
         val backendMain by getting {
@@ -118,8 +115,6 @@ kotlin {
         }
     }
 }
-
-//tasks[""]
 
 fun kotlinDependency(name: String, version: String) = "org.jetbrains:kotlin-$name:$version"
 fun ktorDependency(name: String, version: String = ktor_version) = "io.ktor:ktor-$name:$version"
